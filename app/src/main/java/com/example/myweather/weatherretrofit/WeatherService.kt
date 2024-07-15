@@ -25,6 +25,7 @@ interface WeatherService {
         @Query("appid") apiKey: String,
     ): Call<Response>
 
+
     @GET("forecast?")
     fun getWeatherByCity(
         @Query("q") city: String?,
